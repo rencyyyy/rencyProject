@@ -1,0 +1,110 @@
+:root {
+    --teal: #2ec1ac;
+    --teal-hover: #279e8c;
+    --maroon: #810000;
+    --maroon-hover: #6e0000;
+    --yellow: #e2e259;
+    --yellow-hover: #cfcf50;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.h-font {
+    font-family: 'Roboto', sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.custom-bg {
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+}
+.custom-bg:hover {
+    background-color: var(--teal-hover);
+    border: 1px solid var(--teal-hover);
+}
+.send-bg {
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+.send-bg:hover {
+    background-color: var(--yellow-hover);
+    border: 1px solid var(--yellow-hover);
+}
+.h-line {
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
+}
+
+.availability-form {
+    margin-top: -50px;
+    z-index: 2;
+    position: relative;
+}
+.pop:hover {
+    border-top-color: var(--teal) !important;
+    transform: scale(1.03);
+    transition: all 0.3s;
+}
+.box:hover {
+    border-top-color: var(--maroon-hover) !important;
+}
+/*=================ADMIN LOGIN PANEL CSS ===========================*/
+div.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+.custom-alert {
+    position: fixed;
+    top: 80px;
+    left: 25px;
+    z-index: 1111;
+}
+#dashboard-menu {
+    position: fixed;
+    height: 100%;
+    z-index: 11;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(36, 36, 36);
+  }
+
+@media screen and (max-width: 991px) {
+    #dashboard-menu {
+        height: auto;
+        width: 100%;
+    }
+
+    #main-content {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .availability-form {
+        margin-top: 25px;
+        padding: 0 35px;
+    }
+}
